@@ -43,7 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem 'flickr', '~> 2.1'
-
+gem 'figaro', '~> 1.2'
 
 
 # Use Sass to process CSS
