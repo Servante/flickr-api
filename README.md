@@ -1,24 +1,31 @@
-# README
+# flickr-api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails application utilizing Flickr's API. Allows users to enter a Flickr user_id and retrieve all of the user's photos.
 
-Things you may want to cover:
+Demonstrates key concepts of:
 
-* Ruby version
+* utilizing a 3rd party API
 
-* System dependencies
+* management of secure API keys and secrets via Figaro gem 
 
-* Configuration
 
-* Database creation
+----------------------------------------
 
-* Database initialization
+This was a project completed for [The Odin Project's](https://www.theodinproject.com/) Ruby on Rails course. See the project details [here](https://www.theodinproject.com/lessons/ruby-on-rails-flickr-api).
 
-* How to run the test suite
+Created with:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby 3.1.2
 
-* Deployment instructions
+* Rails 7.0.4
 
-* ...
+
+Gems:
+
+* pry
+
+* rspec
+
+* figaro
+
+* flickr
