@@ -14,14 +14,55 @@
  *= require_self
  */
 
+ body {
+  height: 100vh;
+  width: 100%;
+  background-color: #E86D98;
+ }
+
 
  #header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E86D98;
  }
 
  #header a {
-  text-decoration: none;
+  text-decoration: none;  
+  width: 100%;
+  color: yellow;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+ }
+
+ #form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #3251EB;
+  width: 85%;
+  border-radius: 54%;
+ }
+
+ #form label {
+  color: #FFA178;
+ }
+
+ #photos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #3DECFF; 
+  width: 70%;
+  padding: 20px;
+  margin-bottom: 24px;
  }

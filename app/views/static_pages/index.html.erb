@@ -1,18 +1,18 @@
 <div class="container">
   <div id="form">
     <%= form_with(url: "/", method: "get") do %>
-      <%= label_tag(:user_id, "flickr user_id:") %>
+      <strong><%= label_tag(:user_id, "Flickr User ID:") %></strong>
       <%= text_field_tag(:user_id) %>
       <%= submit_tag("Search") %>
     <% end %>
   </div>
-  <div id="photos-container">
-    <%if @photos %>
+  <%if @photos %>
+    <div id="photos-container">
       <% @photos.each do |photo| %>
         <div class="photos-card">
           <%= image_tag "https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
         </div>
       <% end %>
-    <% end %>
-  </div>
+    </div>
+  <% end %>  
 </div>
