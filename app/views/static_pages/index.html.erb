@@ -1,2 +1,18 @@
-<h1>StaticPages#index</h1>
-<p>Find me in app/views/static_pages/index.html.erb</p>
+<div class="container">
+  <div id="form">
+    <%= form_with(url: "/", method: "get") do %>
+      <%= label_tag(:user_id, "flickr user_id:") %>
+      <%= text_field_tag(:user_id) %>
+      <%= submit_tag("Search") %>
+    <% end %>
+  </div>
+  <div id="photos-container">
+    <%if @photos %>
+      <% @photos.each do |photo| %>
+        <div class="photos-card">
+          <%= image_tag "https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
