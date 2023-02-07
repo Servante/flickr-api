@@ -19,8 +19,7 @@
   width: 100%;
   background-color: #E86D98;
  }
-
-
+ 
  #header {
   display: flex;
   align-items: center;
@@ -56,7 +55,6 @@
 
  #form {
   display: flex;
-  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   padding: 40px;
@@ -76,7 +74,6 @@
   align-items: center;
   gap: 16px;
   background-color: #3DECFF; 
-  /* width: 70%; */
   padding: 20px;
   margin-bottom: 24px;
  }
