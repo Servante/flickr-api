@@ -1,9 +1,15 @@
 <div class="container">
   <div id="form">
     <%= form_with(url: "/", method: "get") do %>
-      <strong><%= label_tag(:user_id, "Flickr User ID:") %></strong>
-      <%= text_field_tag(:user_id) %>
-      <%= submit_tag("Search") %>
+      <div id="label">
+        <strong><%= label_tag(:user_id, "Flickr User ID:") %></strong>
+      </div>
+      <div id="textfield">
+        <%= text_field_tag(:user_id) %>
+      </div>
+      <div id="submit">
+        <%= submit_tag("Search") %>
+      </div>
     <% end %>
   </div>
   <%if @photos %>

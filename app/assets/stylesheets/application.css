@@ -41,13 +41,27 @@
   gap: 24px;
  }
 
+ form {
+  display: flex;
+  gap: 6px;
+ }
+
+ @media only screen and (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+ }
+
  #form {
   display: flex;
+  /* flex-direction: row; */
   align-items: center;
   justify-content: center;
   padding: 40px;
   background-color: #3251EB;
-  width: 85%;
+  width: 50%;
   border-radius: 54%;
  }
 
@@ -62,7 +76,7 @@
   align-items: center;
   gap: 16px;
   background-color: #3DECFF; 
-  width: 70%;
+  /* width: 70%; */
   padding: 20px;
   margin-bottom: 24px;
  }
